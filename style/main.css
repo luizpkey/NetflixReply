@@ -1,0 +1,97 @@
+:root{
+  --vermelho:#e50914;
+  --preto:#141414;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: var(--preto) ;
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+}
+
+header .container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo {
+  margin-left: 5px;
+  color: var(--vermelho);
+  font-family: 'Arial Black', Times;
+  font-size: 40px;
+}
+
+header nav a{
+  text-decoration: none;
+  color: #aaa;
+  margin-right: 10px;
+}
+
+header nav a:hover {
+  color: #fff;
+}
+
+.film-main{
+  font-size: 16px;
+  background: linear-gradient(rgba(0,0,0,.50), rgba(0, 0, 0, .50)100%), url('../img/godfather.jpg');
+
+  height: 600px;
+  background-size: 100vw;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.film-main .description{
+  margin-top: 10px;
+  margin-top: 40px;
+}
+
+.film-main .title{
+  margin-top: 15%;
+  font-size: 40px;
+  font-family: 'Trebuchet MS',  Arial, sans-serif;
+}
+
+.btn{
+  background-color: rgba(0,0,0,.50);
+  border: none;
+  color: white;
+
+  padding: 15px 30px;
+  margin-right: 15px;
+  font-size: 12px;
+
+  cursor: pointer;
+  transition: .3s ease all;
+}
+
+.btn:hover{
+  background-color: white;
+  color: black;
+}
+.btn i {
+  margin-right: 8px;
+}
+
+.film-main .container{
+  width: 70%;
+}
+
+.box-film{
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+.carousel-film{
+  margin-top: 5px;
+}
